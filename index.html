@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="Wyclife Awiti — Author, Preacher & Musician. Discover books, messages, music and ministry platforms.">
+<title>Wyclife Awiti | Author • Preacher • Musician</title>
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#07111f;--ink2:#0d1c31;--gold:#d7ad63;--gold2:#f0d39a;--cream:#f7f3ea;--muted:#aab5c5;--white:#fff;--line:rgba(255,255,255,.11)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--white);font-family:"DM Sans",sans-serif;line-height:1.6}a{text-decoration:none;color:inherit}
+.nav{position:fixed;z-index:20;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:18px 6vw;background:rgba(7,17,31,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.brand{font-family:"Playfair Display";font-size:22px;font-weight:700;letter-spacing:.08em}.brand span{color:var(--gold)}
+.navlinks{display:flex;gap:26px;color:#d9e0ea;font-size:14px}.navlinks a:hover{color:var(--gold2)}
+.hero{min-height:92vh;padding:150px 7vw 90px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:70px;background:radial-gradient(circle at 75% 30%,rgba(215,173,99,.16),transparent 28%),linear-gradient(135deg,#07111f,#0d1c31 62%,#10253b)}
+.eyebrow{color:var(--gold2);text-transform:uppercase;letter-spacing:.24em;font-size:12px;font-weight:700}.hero h1{font-family:"Playfair Display";font-size:clamp(54px,7vw,96px);line-height:.98;margin:18px 0 25px}.hero h1 em{font-weight:500;color:var(--gold2);font-style:normal}.hero p{max-width:610px;color:#c7d0dc;font-size:18px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.btn{padding:14px 22px;border-radius:999px;font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:9px}.primary{background:var(--gold);color:#111}.secondary{border:1px solid var(--line);background:rgba(255,255,255,.04)}
+.hero-card{position:relative;min-height:520px;border-radius:32px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(145deg,#162b45,#08111e);box-shadow:0 30px 80px rgba(0,0,0,.35)}.hero-card:before{content:"";position:absolute;inset:12% 16%;border-radius:50%;background:radial-gradient(circle,rgba(240,211,154,.38),transparent 63%);filter:blur(8px)}.cross{position:absolute;left:50%;top:18%;transform:translateX(-50%);width:96px;height:300px;opacity:.9}.cross:before{content:"";position:absolute;left:38px;top:0;width:20px;height:300px;background:linear-gradient(#fff,#cbd6e2);border-radius:4px}.cross:after{content:"";position:absolute;left:0;top:72px;width:96px;height:20px;background:linear-gradient(#fff,#cbd6e2);border-radius:4px}.quote{position:absolute;left:35px;right:35px;bottom:38px;padding:24px;border:1px solid rgba(255,255,255,.14);border-radius:22px;background:rgba(7,17,31,.58);backdrop-filter:blur(12px)}.quote strong{display:block;font-family:"Playfair Display";font-size:22px;color:#fff}.quote small{color:var(--gold2)}
+section{padding:100px 7vw}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}.section-head h2{font-family:"Playfair Display";font-size:48px;line-height:1.05;margin:8px 0}.section-head p{color:var(--muted);max-width:550px}.cream{background:var(--cream);color:var(--ink)}.cream .section-head p{color:#596575}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{border:1px solid var(--line);border-radius:24px;padding:26px;background:rgba(255,255,255,.035);transition:.25s}.card:hover{transform:translateY(-5px);border-color:rgba(215,173,99,.45)}.cream .card{background:#fff;border-color:#e5dfd2;box-shadow:0 15px 40px rgba(40,30,10,.06)}.book-cover{height:270px;border-radius:16px;background:linear-gradient(145deg,#fff,#e8dfcf);display:flex;align-items:center;justify-content:center;text-align:center;color:#17202c;padding:28px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}.book-cover b{font-family:"Playfair Display";font-size:28px;display:block}.book-cover span{display:block;margin-top:12px;font-size:12px;letter-spacing:.16em}.tag{display:inline-block;margin-top:20px;color:#9b7738;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.card h3{font-family:"Playfair Display";font-size:26px;margin:10px 0}.card p{color:var(--muted)}.cream .card p{color:#667181}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.feature-visual{min-height:430px;border-radius:30px;background:radial-gradient(circle at 50% 25%,rgba(240,211,154,.3),transparent 25%),linear-gradient(150deg,#152a44,#07111f);border:1px solid var(--line);display:flex;align-items:end;padding:30px}.bible{background:#f8f4eb;color:#1b2635;border-radius:12px;padding:35px 25px;width:70%;margin:auto;box-shadow:0 30px 60px rgba(0,0,0,.4);font-family:"Playfair Display";text-align:center;font-size:30px;transform:rotate(-4deg)}.bible small{display:block;font-family:"DM Sans";font-size:11px;letter-spacing:.2em;margin-top:14px}
+.pillars .card{min-height:235px}.icon{font-size:28px;color:var(--gold2)}.platforms{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.platform{padding:20px;border-radius:18px;border:1px solid #e4ded3;background:#fff;display:flex;justify-content:space-between;align-items:center;font-weight:700}.platform span{color:#9b7738;font-size:12px}
+.cta{margin:0 7vw 90px;padding:60px;border-radius:32px;background:linear-gradient(135deg,#b7893e,#e2bf7a);color:#111}.cta h2{font-family:"Playfair Display";font-size:50px;line-height:1.05;margin:0 0 14px}.cta p{max-width:620px}.cta .btn{background:#07111f;color:#fff}
+footer{padding:35px 7vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#8e9aaa;font-size:13px}
+@media(max-width:900px){.navlinks{display:none}.hero,.feature{grid-template-columns:1fr}.hero-card{min-height:430px}.grid{grid-template-columns:1fr 1fr}.platforms{grid-template-columns:1fr 1fr}.section-head{display:block}}
+@media(max-width:600px){section{padding:75px 6vw}.hero{padding:130px 6vw 70px}.grid,.platforms{grid-template-columns:1fr}.hero h1{font-size:58px}.cta{margin:0 6vw 70px;padding:38px}.cta h2{font-size:38px}footer{display:block}}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,17,31,.05) 35%,rgba(7,17,31,.82) 100%)}
+.welcome-splash{position:fixed;inset:0;z-index:100;background:radial-gradient(circle at 50% 30%,rgba(215,173,99,.22),transparent 30%),linear-gradient(145deg,#07111f,#0d1c31 65%,#08111e);display:flex;align-items:center;justify-content:center;text-align:center;padding:28px;transition:opacity .7s ease,visibility .7s ease}.welcome-splash.hidden{opacity:0;visibility:hidden;pointer-events:none}.splash-content{width:min(440px,94vw)}.splash-photo-wrap{width:220px;height:220px;margin:0 auto 24px;border-radius:50%;padding:5px;background:linear-gradient(135deg,#f0d39a,#b7893e,#f7f3ea);box-shadow:0 0 70px rgba(215,173,99,.25)}.splash-photo{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center top;border:4px solid #07111f}.splash-eyebrow{font-size:12px;letter-spacing:.3em;font-weight:800;color:#f0d39a}.splash-content h1{font-family:"Playfair Display";font-size:clamp(42px,10vw,64px);line-height:1;margin:10px 0 8px}.splash-content h1 span{color:#d7ad63}.splash-content p{margin:0;color:#c7d0dc;font-size:17px}.splash-button{margin-top:30px;border:0;border-radius:999px;padding:15px 25px;background:#d7ad63;color:#111;font-weight:800;cursor:pointer;box-shadow:0 12px 30px rgba(0,0,0,.3)}.splash-button:hover{background:#f0d39a}.splash-song{margin-top:18px;color:#aab5c5;font-size:13px;letter-spacing:.08em}
+
+.welcome-splash .splash-photo-wrap{display:block!important;visibility:visible!important;opacity:1!important}
+.welcome-splash .splash-photo{display:block!important;visibility:visible!important;opacity:1!important}
+</style>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#07111f">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+  </head>
+<body>
+
+<div id="welcome-splash" class="welcome-splash" aria-label="Welcome to Wyclife Awiti">
+  <div class="splash-content">
+    <div class="splash-photo-wrap">
+      <img src="wyclife-awiti-real-photo.png" alt="Wyclife Awiti" class="splash-photo">
+    </div>
+    <div class="splash-eyebrow">WELCOME</div>
+    <h1>WYCLIFE <span>AWITI</span></h1>
+    <p>Author • Preacher • Musician</p>
+    <button class="splash-button" onclick="enterApp()">ENTER THE EXPERIENCE</button>
+    <div class="splash-song">♪ MY FRIEND</div>
+  </div>
+</div>
+
+<nav class="nav">
+  <a class="brand" href="#">WYCLIFE <span>AWITI</span></a>
+  <div class="navlinks">
+    <a href="#welcome-song">Welcome Song</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#books">Books</a><a href="#preaching">Preaching</a><a href="#music">Music</a><a href="#platforms">Platforms</a><a href="https://wyclifeawiti.ca/" target="_blank" rel="noopener">Website</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">Author • Preacher • Musician</div>
+    <h1>Words that <em>inspire.</em><br>Faith that <em>moves.</em></h1>
+    <p>Welcome to the official home of Wyclife Awiti — a place to discover books, biblical teaching, gospel music, and resources created to encourage people to know the Word of God and live with purpose.</p>
+    <div class="actions"><a class="btn primary" href="#books">Explore the work →</a><a class="btn secondary" href="#about">Discover Wyclife</a></div>
+  </div>
+  <div class="hero-card">
+    <img class="hero-photo" src="wyclife-awiti-real-photo.png" alt="Wyclife Awiti">
+    <div class="hero-overlay"></div>
+    <div class="quote"><strong>Wyclife Awiti</strong><small>AUTHOR • PREACHER • MUSICIAN</small></div>
+  </div>
+</header>
+
+
+<section id="welcome-song" class="cream">
+  <div class="section-head">
+    <div><div class="eyebrow">Welcome to Wyclife Awiti</div><h2>Let the journey<br>begin with music.</h2></div>
+    <p>Enjoy a welcoming song as you enter the world of Wyclife Awiti — author, preacher and musician.</p>
+  </div>
+  <div class="feature">
+    <div class="card" style="padding:0;overflow:hidden">
+      <div style="position:relative;padding-top:56.25%">
+        <iframe src="https://www.youtube.com/embed/Zn-uu-AIBE8?rel=0" title="Wyclife Awiti — MY FRIEND" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div>
+      <div class="tag">Featured welcome song</div>
+      <h3 style="font-family:'Playfair Display';font-size:34px">MY FRIEND</h3>
+      <p>Play the song from the app's welcome experience. Visitors can also open it directly on YouTube.</p>
+      <a class="btn primary" href="https://www.youtube.com/watch?v=Zn-uu-AIBE8" target="_blank" rel="noopener">Open on YouTube →</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-head"><div><div class="eyebrow">The story</div><h2>One calling.<br>Many expressions.</h2></div><p>Wyclife Awiti brings together writing, preaching, music and digital creativity to communicate the message of faith in ways people can read, hear, watch and share.</p></div>
+  <div class="grid pillars">
+    <div class="card"><div class="icon">✦</div><h3>Author</h3><p>Books and written resources designed to feed faith, deepen understanding and encourage a life rooted in Scripture.</p></div>
+    <div class="card"><div class="icon">✧</div><h3>Preacher</h3><p>Biblical teaching and practical encouragement centered on Jesus, grace, faith, hope and the transforming power of God's Word.</p></div>
+    <div class="card"><div class="icon">♪</div><h3>Musician</h3><p>Gospel and worship music created to lift hearts, magnify Jesus and turn truth into songs people can carry with them.</p></div>
+  </div>
+</section>
+
+<section id="books" class="cream">
+  <div class="section-head"><div><div class="eyebrow">Featured library</div><h2>Books that feed the soul.</h2></div><p>Give every book its own beautiful page with its story, key themes, sample pages, purchase links and reader resources.</p></div>
+  <div class="grid">
+    <article class="card"><div class="book-cover"><div><b>Eat The<br>Word Of God</b><span>WYCLIFE AWITI</span></div></div><div class="tag">Featured book</div><h3>Eat The Word Of God</h3><p>A call to move beyond simply hearing Scripture—to receive it, meditate on it, live it and allow it to shape everyday life.</p><a class="btn primary" href="#platforms">Book information →</a></article>
+    <article class="card"><div class="book-cover"><div><b>MORE<br>COMING SOON</b><span>WYCLIFE AWITI</span></div></div><div class="tag">Library</div><h3>Future titles</h3><p>Additional books can be added here with professional covers, descriptions, reader guides and direct links.</p></article>
+    <article class="card"><div class="book-cover"><div><b>AUTHOR'S<br>COLLECTION</b><span>WRITINGS • TEACHINGS • RESOURCES</span></div></div><div class="tag">Resources</div><h3>Written resources</h3><p>Devotionals, articles, study materials and other written works can live in one organized collection.</p></article>
+  </div>
+</section>
+
+<section id="preaching">
+  <div class="section-head"><div><div class="eyebrow">The message</div><h2>Preaching that points<br>people to Jesus.</h2></div><p>Turn sermons and encouragement into a searchable library with categories, Scripture references, audio, video and shareable excerpts.</p></div>
+  <div class="feature">
+    <div class="feature-visual"><div class="bible">HOLY<br>BIBLE<small>THE WORD OF GOD</small></div></div>
+    <div>
+      <div class="tag">Suggested categories</div>
+      <h3 style="font-family:'Playfair Display';font-size:34px">Grace • Faith • Hope • Prayer • Healing • Purpose</h3>
+      <p>Every teaching can have a dedicated page with the main message, Scriptures, video/audio, notes and a simple “Share” action so the message can travel further.</p>
+      <a class="btn primary" href="#platforms">Watch / listen →</a>
+    </div>
+  </div>
+</section>
+
+<section id="music" class="cream">
+  <div class="section-head"><div><div class="eyebrow">Gospel music</div><h2>Let the message<br>become a song.</h2></div><p>A polished music section for singles, albums, worship songs, lyrics, videos and streaming destinations.</p></div>
+  <div class="grid">
+    <div class="card"><div class="tag">Worship</div><h3>Featured songs</h3><p>Add song artwork, audio players, lyrics and a “Listen on your platform” button.</p></div>
+    <div class="card"><div class="tag">Albums</div><h3>Music collection</h3><p>Organize releases by album, single, language or worship theme.</p></div>
+    <div class="card"><div class="tag">Video</div><h3>Music videos</h3><p>Connect official music videos and live worship performances in one beautiful library.</p></div>
+  </div>
+</section>
+
+<section id="platforms">
+  <div class="section-head"><div><div class="eyebrow">Everywhere you create</div><h2>Find Wyclife<br>across the web.</h2></div><p>Connect directly to Wyclife Awiti's verified web, professional and music destinations. Additional social links can be added when their exact official profile URLs are confirmed.</p></div>
+  <div class="platforms">
+    <a class="platform" href="https://www.youtube.com/@highcallinginternationalmi124" target="_blank" rel="noopener">Highcalling International Ministry — YouTube <span>VIDEO</span></a>
+    <a class="platform" href="https://www.facebook.com/potterscanada/" target="_blank" rel="noopener">Potter’s Ministry Canada <span>MINISTRY</span></a>
+    <a class="platform" href="https://www.facebook.com/HighcallingInternationalMinistry/" target="_blank" rel="noopener">Highcalling International Ministry <span>MINISTRY</span></a>
+    <a class="platform" href="https://open.spotify.com/album/6I7XHUDMWe34tFgY3PCyd8" target="_blank" rel="noopener">Spotify <span>MUSIC</span></a>
+    <a class="platform" href="https://www.youtube.com/channel/UCyBohlCUJQEFopEaGbJKpog" target="_blank" rel="noopener">YouTube <span>VIDEO</span></a>
+    <a class="platform" href="https://www.facebook.com/profile.php?id=61591419726337" target="_blank" rel="noopener">Facebook <span>SOCIAL</span></a>
+    <a class="platform" href="https://ca.linkedin.com/in/wyclife-awiti-8bba10117" target="_blank" rel="noopener">LinkedIn <span>PROFESSIONAL</span></a>
+    <a class="platform" href="https://music.apple.com/ca/artist/wyclife-awiti/1827880720" target="_blank" rel="noopener">Apple Music <span>MUSIC</span></a>
+    <a class="platform" href="https://wyclifeawiti.bandcamp.com/" target="_blank" rel="noopener">Bandcamp <span>MUSIC</span></a>
+    <a class="platform" href="https://wyclifeawiti.ca/" target="_blank" rel="noopener">WYCLIFE AWITI Website <span>WEB</span></a>
+    <a class="platform" href="https://music.amazon.com.au/artists/B0FJ8G5CF1/wyclife-awiti" target="_blank" rel="noopener">Amazon Music <span>MUSIC</span></a>
+    <a class="platform" href="https://www.shazam.com/artist/wyclife-awiti/1827880720" target="_blank" rel="noopener">Shazam <span>MUSIC</span></a>
+    <a class="platform" href="https://distrokid.com/hyperfollow/wyclifeawiti/creator-of-all-2" target="_blank" rel="noopener">Music Links <span>ALL MUSIC</span></a>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="eyebrow" style="color:#07111f">Stay connected</div>
+  <h2>Discover. Listen. Read. Grow.</h2>
+  <p>Make this app the single destination for Wyclife Awiti's books, sermons, music and ministry resources.</p>
+  <a class="btn" href="#platforms">Connect with the work →</a>
+</div>
+
+<footer><div>© 2026 Wyclife Awiti. All rights reserved.</div><div>Author • Preacher • Musician</div></footer>
+<script>
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
+</script>
+
+<script>
+function enterApp(){
+  const splash=document.getElementById("welcome-splash");
+  splash.classList.add("hidden");
+  setTimeout(()=>splash.remove(),750);
+}
+</script>
+
+</body>
+</html>
+
+<section id="ministry" class="cream">
+  <div class="section-head">
+    <div><div class="eyebrow">Ministry</div><h2>Highcalling International Ministry</h2></div>
+    <p>Connect with the ministry and discover its work, updates, outreach and faith-centered activities.</p>
+  </div>
+  <div class="card">
+    <div class="tag">Official ministry page</div>
+    <h3>Highcalling International Ministry</h3>
+      <p>Connect with the ministry on YouTube for video teachings, ministry updates and encouragement.</p>
+      <a class="btn primary" href="https://www.youtube.com/@highcallinginternationalmi124" target="_blank" rel="noopener">VISIT HIGHCALLING ON YOUTUBE →</a>
+    <p>Visit the ministry's Facebook page for updates and ministry content.</p>
+    <a class="btn primary" href="https://www.facebook.com/HighcallingInternationalMinistry/" target="_blank" rel="noopener">VISIT MINISTRY PAGE →</a>
+  </div>
+</section>
+
+
+<section id="ministries" class="cream">
+  <div class="section-head">
+    <div><div class="eyebrow">Ministry connections</div><h2>Ministries close to<br>the heart of the calling.</h2></div>
+    <p>Connect with ministry communities and partners associated with Wyclife Awiti’s work and Christian mission.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="tag">Ministry</div>
+      <h3>Highcalling International Ministry</h3>
+      <p>Explore the official ministry page and its latest ministry updates.</p>
+      <a class="btn primary" href="https://www.facebook.com/HighcallingInternationalMinistry/" target="_blank" rel="noopener">VISIT MINISTRY →</a>
+    </div>
+    <div class="card">
+      <div class="tag">Ministry Canada</div>
+      <h3>Potter’s Ministry Canada</h3>
+      <p>Visit the ministry’s Facebook page for updates, fellowship and ministry activities.</p>
+      <a class="btn primary" href="https://www.facebook.com/potterscanada/" target="_blank" rel="noopener">VISIT POTTER’S MINISTRY →</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cream">
+  <div class="section-head">
+    <div><div class="eyebrow">Get in touch</div><h2>Connect with<br>Wyclife Awiti.</h2></div>
+    <p>For book, preaching, music, ministry and professional enquiries, reach out directly.</p>
+  </div>
+  <div class="grid">
+    <div class="card contact-card">
+      <div class="tag">Email</div>
+      <h3>wyclifeawiti@hotmail.com</h3>
+      <a class="btn primary" href="mailto:wyclifeawiti@hotmail.com">SEND AN EMAIL →</a>
+    </div>
+    <div class="card contact-card">
+      <div class="tag">Email</div>
+      <h3>wyclifeawiti81@gmail.com</h3>
+      <a class="btn primary" href="mailto:wyclifeawiti81@gmail.com">SEND AN EMAIL →</a>
+    </div>
+  </div>
+  <div class="card" style="margin-top:22px">
+    <div class="tag">Phone</div>
+    <h3>+1 778-587-7290</h3>
+    <a class="btn primary" href="tel:+17785877290">CALL WYCLIFE →</a>
+  </div>
+</section>

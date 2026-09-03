@@ -1,0 +1,20 @@
+WYCLIFE AWITI — PHONE APP INSTALLATION
+
+This package is a Progressive Web App (PWA) build.
+
+IMPORTANT:
+A ZIP file cannot be installed directly as an Android/iPhone app. The app must be hosted at an HTTPS web address before the phone can install it as an app.
+
+ANDROID:
+1. Put this folder on an HTTPS web host.
+2. Open the website in Chrome.
+3. Use the browser menu and choose “Install app” or “Add to Home screen”.
+
+IPHONE:
+1. Open the HTTPS website in Safari.
+2. Tap Share.
+3. Choose “Add to Home Screen”.
+
+For Google Play Store / Apple App Store distribution, the next production step is to package this PWA as a native store application and create the store listings/signing credentials.
+
+The app content and design are already prepared for that next step.
